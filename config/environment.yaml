@@ -1,0 +1,33 @@
+user:
+  jay:
+    username: 周杰伦
+    password: 123456
+  william:
+    username: william
+    password: 123456
+  failure:
+    username: william
+    password: william
+
+url: http://www.tcpjwtester.top
+
+mysql:
+  db: trading_system
+  host: 127.0.0.1
+  password: 963852741
+  port: 3306
+  user: root
+
+redis:
+  host: 192.168.40.130
+  port: 6379
+  db: 0
+
+jenkins:
+  url: http://localhost:8080
+
+dingding_group:
+  webhook: https://oapi.dingtalk.com/robot/send?access_token=9de35fd08b708860978b090789f0aec3d62f2e94b614ddade0e20639e8009606
+
+qywx_group:
+  webhook: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e7c2a250-250d-4654-82d6-93924c08c134
