@@ -6,7 +6,7 @@ UI自动化测试使用python3+selenium3+pytest+allure+图像识别实现
 2. 进入项目目录
 3. 安装必要依赖
 ```
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -r requirements.txt 
 ```
 
 ## 目录介绍
