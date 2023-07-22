@@ -9,12 +9,12 @@ user:
     username: william
     password: william
 
-url: http://www.tcpjwtester.top
+url: http://192.168.40.130/
 
 mysql:
   db: trading_system
-  host: 127.0.0.1
-  password: 963852741
+  host: 192.168.40.130
+  password: william
   port: 3306
   user: root
 
