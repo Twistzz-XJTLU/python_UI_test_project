@@ -66,7 +66,7 @@ class LoginPage(LoginBase, ObjectMap):
             self.element_fill_value(driver, By.XPATH, input_captcha_xpath, identify)
             time.sleep(3)
         username, password = GetConf().get_username_password(user)
-        self. _value(driver, "用户名", username)
+        self.login_input_value(driver, "用户名", username)
         self.login_input_value(driver, "密码", password)
         self.click_login(driver, "登录")
         self.assert_login_success(driver)
