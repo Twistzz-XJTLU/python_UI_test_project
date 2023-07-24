@@ -4,7 +4,7 @@
 # @Author: william
 
 from common.process_redis import Process
-# from common.ding_talk import send_dingtalk_msg_markdown
+from common.ding_talk import send_dingtalk_msg_markdown
 from common.qywx import send_qywx_msg_markdown
 from common.yaml_config import GetConf
 
@@ -31,25 +31,25 @@ Process().write_end_time()
 # 更改运行状态为0
 Process().modify_running_status(0)
 
-# # 项目名称
-# project_name = "trading_system_autotest"
-# # 报告标题
-# report_title = "UI自动化测试-测试报告"
-# # jenkins地址
-# jenkins_url = GetConf().get_jenkins()["url"]
-# # allure测试报告地址
-# allure_url = jenkins_url + "/job/" + project_name + "/allure/"
-# # 发送报告到钉钉
-# dingding_webhook = GetConf().get_dingding_webhook()
-# send_dingtalk_msg_markdown(
-#     dingding_webhook,
-#     allure_url,
-#     total,
-#     success,
-#     fail,
-#     failed_testcases_name,
-#     report_title
-# )
+# 项目名称
+project_name = "trading_system_auto_test"
+# 报告标题
+report_title = "UI自动化测试-测试报告"
+# jenkins地址
+jenkins_url = GetConf().get_jenkins()["url"]
+# allure测试报告地址
+allure_url = jenkins_url + "/job/" + project_name + "/allure/"
+# 发送报告到钉钉
+dingding_webhook = GetConf().get_dingding_webhook()
+send_dingtalk_msg_markdown(
+    dingding_webhook,
+    allure_url,
+    total,
+    success,
+    fail,
+    failed_testcases_name,
+    report_title
+)
 # # 发送报告到企业微信
 # qywx_webhook = GetConf().get_qywx_webhook()
 # send_qywx_msg_markdown(

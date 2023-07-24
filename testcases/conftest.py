@@ -9,7 +9,7 @@ from config.driver_config import DriverConfig
 from common.report_add_img import add_img_2_report
 from common.process_redis import Process
 from common.yaml_config import GetConf
-# from common.ding_talk import send_dingtalk_msg
+from common.ding_talk import send_dingtalk_msg
 
 
 def pytest_collection_finish(session):
@@ -52,13 +52,13 @@ def pytest_runtest_makereport(item, call):
             pass
         process = Process().get_process()
 
-        # webhook = GetConf().get_dingding_webhook()
-        # send_dingtalk_msg(
-        #     webhook,
-        #     "测试用例:"
-        #     + report.description
-        #     + "\n测试结果: "
-        #     + report.outcome
-        #     + "\n自动化测试进度: "
-        #     + process,
-        # )
+        webhook = GetConf().get_dingding_webhook()
+        send_dingtalk_msg(
+            webhook,
+            "测试用例:"
+            + report.description
+            + "\n测试结果: "
+            + report.outcome
+            + "\n自动化测试进度: "
+            + process,
+        )

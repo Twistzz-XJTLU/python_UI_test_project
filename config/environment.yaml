@@ -27,7 +27,7 @@ jenkins:
   url: http://localhost:8080
 
 dingding_group:
-  webhook: https://oapi.dingtalk.com/robot/send?access_token=9de35fd08b708860978b090789f0aec3d62f2e94b614ddade0e20639e8009606
+  webhook: https://oapi.dingtalk.com/robot/send?access_token=0cc4e11c529be112b428b5a30ba51295d16e82ecec2013c4160bdf2cd72d527d
 
 qywx_group:
   webhook: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e7c2a250-250d-4654-82d6-93924c08c134
