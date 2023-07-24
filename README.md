@@ -1,7 +1,13 @@
 # Selenium3+Pytest+Allure落地Python Web自动化测试
 
+## 项目概述
 
 UI自动化测试使用python3+selenium3+pytest+allure+图像识别实现
+
+![](https://cdn.staticaly.com/gh/Twistzz-XJTLU/picx-images-hosting@master/FireShot-Capture-042---Selenium3+Pytest+Allure落地Python-Web自动化测试---慕课网---coding.imooc.com.4eolp719s460.webp)
+
+## 运行项目
+
 1. 通过git clone代码到本地
 2. 进入项目目录
 3. 安装必要依赖
@@ -64,6 +70,7 @@ pip install -r requirements.txt
 上图中,当页面元素发生变化 只需要修改 最上面元素定位 user_name 剩下的 元素操作和测试用例都不需要修改 
 
 ## 执行用例
+
 1. 本地运行
 ```
 pytest -s -q testcases
